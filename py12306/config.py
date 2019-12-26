@@ -76,12 +76,12 @@ class Config:
     PUSHBEAR_KEY = 'SCUdafadsfasfdafdf45234234234'
 
     # 邮箱配置
-    EMAIL_ENABLED = 0
-    EMAIL_SENDER = ''
-    EMAIL_RECEIVER = ''
-    EMAIL_SERVER_HOST = ''
-    EMAIL_SERVER_USER = ''
-    EMAIL_SERVER_PASSWORD = ''
+    EMAIL_ENABLED = 0  # 是否开启邮件通知
+    EMAIL_SENDER = ''  # 邮件发送者
+    EMAIL_RECEIVER = ''  # 邮件接受者 # 可以多个 [email1@gmail.com, email2@gmail.com]
+    EMAIL_SERVER_HOST = ''  # 邮件服务 host
+    EMAIL_SERVER_USER = ''  # 邮件服务登录用户名
+    EMAIL_SERVER_PASSWORD = ''  # 邮件服务登录密码
 
     WEB_ENABLE = 0
     WEB_USER = {}

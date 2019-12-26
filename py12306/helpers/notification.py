@@ -15,7 +15,7 @@ class Notification():
     def __init__(self):
         self.session = Request()
 
-    @classmethod
+    @classmethod #将函数方法转换为类方法，通过类名.函数名即可调用
     def voice_code(cls, phone, name='', content=''):
         self = cls()
         if Config().NOTIFICATION_VOICE_CODE_TYPE == 'dingxin':
@@ -118,6 +118,7 @@ class Notification():
         import smtplib
         from email.message import EmailMessage
         to = to if isinstance(to, list) else [to]
+        #print(' send_email_by_smtp\n')#输出发送邮件信息
         message = EmailMessage()
         message['Subject'] = title
         message['From'] = Config().EMAIL_SENDER

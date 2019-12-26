@@ -67,7 +67,7 @@ class BaseLog:
     @classmethod
     def add_quick_log(cls, content=''):
         self = cls()
-        self.quick_log.append(content)
+        self.quick_log.append(content)#添加到quick_log中
         return self
 
     def notification(self, title, content=''):

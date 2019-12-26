@@ -102,6 +102,7 @@ class App:
 
     @classmethod
     def test_send_notifications(cls):
+        print('send email test\n')
         if Config().NOTIFICATION_BY_VOICE_CODE:  # 语音通知
             CommonLog.add_quick_log(CommonLog.MESSAGE_TEST_SEND_VOICE_CODE).flush()
             if Config().NOTIFICATION_VOICE_CODE_TYPE == 'dingxin':
@@ -111,6 +112,7 @@ class App:
                                                                                                          '深圳')
             Notification.voice_code(Config().NOTIFICATION_VOICE_CODE_PHONE, '张三', voice_content)
         if Config().EMAIL_ENABLED:  # 邮件通知
+            #print('send email test enable\n')
             CommonLog.add_quick_log(CommonLog.MESSAGE_TEST_SEND_EMAIL).flush()
             Notification.send_email(Config().EMAIL_RECEIVER, '测试发送邮件', 'By py12306')
 

@@ -8,9 +8,9 @@ from py12306.query.query import Query
 from py12306.user.user import User
 from py12306.web.web import Web
 
-
+#主入口
 def main():
-    load_argvs()
+    load_argvs()#加载参数
     CommonLog.print_welcome()
     App.run()
     CommonLog.print_configs()
