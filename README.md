@@ -23,7 +23,7 @@ py12306 需要运行在 python 3.6 以上版本（其它版本暂未测试)
 ```bash
 git clone https://github.com/pjialin/py12306
 
-pip install -r requirements.txt
+pip install -r requirements.txt //lxml通过下载.whl文件安装，windows上直接安装不行
 ```
 
 **2. 配置程序**
